@@ -11,7 +11,7 @@ VOLUME ["/home/logs"]
 WORKDIR /home/app
 # 复制jar文件到路径
 #COPY build/libs/*.jar Bingo.jar
-COPY bingo-2024042202.jar Bingo.jar
+COPY bingo-2024042201.jar Bingo.jar
 # 启动网关服务
 ENTRYPOINT ["java","-jar","Bingo.jar"]
 #构建容器后调用，也就是在容器启动时才进行调用  相当于我们给容器启动过程增加参数
